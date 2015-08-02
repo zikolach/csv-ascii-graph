@@ -1,4 +1,4 @@
-name := """csv-sacii-graph"""
+name := """csv-ascii-graph"""
 
 version := "0.1.0"
 
@@ -23,3 +23,6 @@ libraryDependencies ++= Seq(
 
 // TestNG
 libraryDependencies += "org.testng" % "testng" % "6.8.8" % "test"
+
+assemblyJarName in assembly := "csv-ascii-graph.jar"
+mainClass in assembly := Some("CsvAsciiGraph")

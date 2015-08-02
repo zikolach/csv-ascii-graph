@@ -28,7 +28,7 @@ object CsvAsciiGraph {
       case _: NumberFormatException =>
         println("Invalid number argument week or year")
     }
-    println((dateColumnOpt, valueColumnOpt, yearOpt, weekOpt))
+//    println((dateColumnOpt, valueColumnOpt, yearOpt, weekOpt))
     (dateColumnOpt, valueColumnOpt, yearOpt, weekOpt) match {
       case (Some(dateColumn), Some(valueColumn), Some(year), Some(week)) =>
         val input = new BufferedSource(new UnicodeBOMInputStream(System.in).skipBom()).getLines().toStream
